@@ -1,0 +1,144 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5                                     |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      epsilon;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 2 -3 0 0 0 0];
+
+internalField   uniform 0.01;
+
+boundaryField
+{
+    Outlet
+    {
+        type	          turbulentMixingLengthDissipationRateInlet;
+        value	          uniform 1.0;
+        mixingLength	  0.001;
+    }
+    Inlet
+    {
+        type	          turbulentMixingLengthDissipationRateInlet;
+        value	          uniform 1.0;
+        mixingLength	  0.001;
+    }
+    Air_Boundaries
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    
+    Air_Fluid_to_Server_Solid
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region17
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region8
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region11
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region12
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region10
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region6
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region13
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region1
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region14
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region4
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region5
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region18
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region7
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region2
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region3
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region19
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region9
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region15
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    Air_Fluid_to_region16
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;;
+    }
+}
+
+
+// ************************************************************************* //

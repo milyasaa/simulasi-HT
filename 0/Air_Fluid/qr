@@ -1,0 +1,206 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5.x                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/*   Windows 32 and 64 bit porting by blueCAPE: http://www.bluecape.com.pt   *\
+|  Based on Windows porting (2.0.x v4) by Symscape: http://www.symscape.com   |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0/bottomAir";
+    object      qr;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [ 1 0 -3 0 0 0 0 ];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    Outlet
+    {
+        type            calculated;
+        value           $internalField;
+    }
+    Inlet
+    {
+        type            calculated;
+        value           $internalField;
+    }
+    Air_Boundaries
+    {
+        type            calculated;
+        value           $internalField;
+    }
+    
+    Air_Fluid_to_Server_Solid
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region17
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region8
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region11
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region12
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region10
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region6
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region13
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region1
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region14
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region4
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region5
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region18
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region7
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region2
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region3
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region19
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region9
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region15
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    }
+    Air_Fluid_to_region16
+    {
+        type            greyDiffusiveRadiationViewFactor;
+        value           uniform 0;
+        emissivityMode  solidRadiation;
+        T	              T;
+        qro             uniform 0;
+    } 
+}
+
+
+// ************************************************************************* //

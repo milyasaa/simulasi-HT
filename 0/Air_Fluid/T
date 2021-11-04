@@ -1,0 +1,282 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5                                     |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "constant/Air_Fluid";
+    object      T;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 1 0 0 0];
+
+internalField   uniform 298;
+
+boundaryField
+{
+    Outlet
+    {
+        type	          inletOutlet;
+        inletValue	    uniform 302.0;
+    }
+    Inlet
+    {
+        type	          totalTemperature;
+        T0	            uniform 294.0;
+        gamma	          1.396;
+    }
+    Air_Boundaries
+    {
+        type            zeroGradient;
+    }
+    
+    Air_Fluid_to_Server_Solid
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region17
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region8
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region11
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region12
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region10
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region6
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region13
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region1
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region14
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region4
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region5
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region18
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region7
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region2
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region3
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region19
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region9
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region15
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    }
+    Air_Fluid_to_region16
+    {
+        type            compressible::turbulentTemperatureRadCoupledMixed;
+        value           uniform 298;
+        Tnbr            T;
+        kappaMethod     fluidThermo;
+        qrNbr	          none;
+        qr	            qr;
+        neighbourFieldName	T;
+        thicknessLayers	();
+        kappaLayers	    ();
+    } 
+}
+
+// ************************************************************************* //

@@ -1,0 +1,141 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5                                     |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      p;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [1 -1 -2 0 0 0 0];
+
+internalField   uniform 1e5;
+
+boundaryField
+{
+    Outlet
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Inlet
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Boundaries
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    
+    Air_Fluid_to_Server_Solid
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region17
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region8
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region11
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region12
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region10
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region6
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region13
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region1
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region14
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region4
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region5
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region18
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region7
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region2
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region3
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region19
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region9
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region15
+    {
+        type            calculated;
+        value           uniform 1e5;
+    }
+    Air_Fluid_to_region16
+    {
+        type            calculated;
+        value           uniform 1e5;
+    } 
+}
+
+// ************************************************************************* //
